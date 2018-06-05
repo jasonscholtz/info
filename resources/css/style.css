@@ -1,0 +1,24 @@
+body {
+  font-family: "Space Mono", sans-serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+}
+
+#back-button {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
