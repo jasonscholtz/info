@@ -15,7 +15,7 @@ a:hover, a:active {
   color: black;
 }
 
-#back-button {
+.back-button {
   margin-top: 2rem;
 }
 
