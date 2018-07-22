@@ -4,6 +4,10 @@ body {
   font-family: "Space Mono", sans-serif;
 }
 
+p {
+  margin: 1rem 0
+}
+
 a:link, a:visited {
   text-decoration: none;
   color: black;
@@ -25,8 +29,32 @@ a:hover, a:active {
   }
 }
 
+/* carousel */
+
+#carousel {
+    width: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    overflow-y: scroll;
+}
+
+#carousel .slide {
+    display: inline;
+}
+
+#carousel .slide img {
+  max-width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  #carousel .slide img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
 /* index */
 
-.info {
+.banner, .info {
   margin: 2.5rem 1rem;
 }
