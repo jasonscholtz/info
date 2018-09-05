@@ -20,13 +20,33 @@ a:hover, a:active {
   color: black;
 }
 
-.back-button {
-  margin-top: 2rem;
-}
-
 @media screen and (max-width: 600px) {
   body {
     font-size: 1.125rem;
+  }
+}
+
+/* carousel */
+
+#carousel {
+    width: 100%;
+    overflow: visible;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+#carousel .slide {
+    display: inline;
+}
+
+#carousel .slide img {
+  max-width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  #carousel .slide img {
+    max-width: 100%;
+    display: block;
   }
 }
 
@@ -64,35 +84,19 @@ nav span {
   nav {
     width: 100%;
     flex-direction: row;
-    overflow: scroll;
     margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+ }
+
+  nav::-webkit-scrollbar {
+  display: none; }
   }
+
   nav span {
     margin: .5rem;
-  }
-}
-
-/* carousel */
-
-#carousel {
-    width: 100%;
-    overflow: visible;
-    white-space: nowrap;
-    overflow-y: hidden;
-}
-
-#carousel .slide {
-    display: inline;
-}
-
-#carousel .slide img {
-  max-width: 60%;
-}
-
-@media screen and (max-width: 600px) {
-  #carousel .slide img {
-    max-width: 90%;
-    display: block;
   }
 }
 
