@@ -1,9 +1,5 @@
 /* universal styles */
 
-div {
-  border: 1px solid black;
-}
-
 body {
   font-size: 1rem;
   font-family: "Space Mono", sans-serif;
