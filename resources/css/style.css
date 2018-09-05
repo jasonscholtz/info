@@ -65,6 +65,18 @@ a:hover, a:active {
   }
 }
 
+/* banner */
+
+#carousel.banner {
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  #carousel.banner {
+    margin: 15% auto auto auto;
+  }
+}
+
 /* nav */
 
 nav {
@@ -97,17 +109,5 @@ nav span {
 
   nav span {
     margin: .5rem;
-  }
-}
-
-/* banner */
-
-.banner {
-  margin-left: 20%;
-}
-
-@media screen and (max-width: 600px) {
-  .banner {
-    margin: 15% auto auto auto;
   }
 }
