@@ -1,6 +1,7 @@
 /* universal styles */
 
 body {
+  line-height: 1.4;
   font-size: 1rem;
   font-family: "Space Mono", sans-serif;
 }
