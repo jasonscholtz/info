@@ -102,9 +102,14 @@ nav {
   width: 15%;
   margin-right: 1rem;
   position: fixed;
-  display: flex;
+
   flex-direction: column;
   background-color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
 }
 
 nav li {
@@ -112,6 +117,7 @@ nav li {
 }
 
 @media screen and (max-width: 600px) {
+
   nav {
     width: 100%;
     flex-direction: row;
@@ -124,6 +130,18 @@ nav li {
 
   nav::-webkit-scrollbar {
   display: none; }
+
+  nav h1 {
+    position: fixed;
   }
 
-}
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    padding-right: 1rem;
+    margin: 2.5rem 0 1rem 0;
+  }
+
+  }
