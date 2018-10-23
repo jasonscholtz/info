@@ -51,6 +51,7 @@ a:hover, a:active {
     overflow: visible;
     white-space: nowrap;
     overflow-y: hidden;
+
 }
 
 #carousel .slide {
@@ -59,6 +60,18 @@ a:hover, a:active {
 
 #carousel .slide img {
   max-width: 80%;
+}
+
+#work #carousel .slide {
+  display: inline;
+}
+
+#work #carousel .slide img {
+  vertical-align: middle;
+}
+
+#work #carousel .slide span {
+  display: block;
 }
 
 @media screen and (max-width: 600px) {
