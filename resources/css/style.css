@@ -18,6 +18,11 @@ h1 {
   margin-bottom: .5rem;
 }
 
+h2 {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
 p {
   margin: .5rem 0;
 }
@@ -51,7 +56,6 @@ a:hover, a:active {
     overflow: visible;
     white-space: nowrap;
     overflow-y: hidden;
-
 }
 
 #carousel .slide {
@@ -93,7 +97,7 @@ a:hover, a:active {
 .container-content {
   padding-top: 1rem;
   margin-left: 20%;
-  max-width: 65ch;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -103,18 +107,6 @@ a:hover, a:active {
   }
   .container-content {
     margin: 20% 0 0 0;
-  }
-}
-
-/* banner */
-
-#carousel.banner {
-  margin-left: 20%;
-}
-
-@media screen and (max-width: 600px) {
-  #carousel.banner {
-    margin: 15% auto auto auto;
   }
 }
 
