@@ -22,6 +22,11 @@ p {
   margin: .5rem 0;
 }
 
+p#cv-link  {
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
 a:link, a:visited {
   text-decoration: none;
   color: black;
