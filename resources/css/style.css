@@ -100,8 +100,9 @@ a:hover, a:active {
   max-width: 100%;
 }
 
-.container-content p {
+.container-text {
   max-width: 65ch;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 600px) {
