@@ -95,7 +95,7 @@ a:hover, a:active {
 }
 
 .container-content {
-  padding-top: 1rem;
+  padding-top: .5rem;
   margin-left: 20%;
   max-width: 100%;
 }
