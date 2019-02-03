@@ -59,11 +59,11 @@ a:hover, a:active {
 }
 
 #carousel .slide {
-    display: block;
+    display: inline;
 }
 
 #carousel .slide img {
-  max-width: 80%;
+  max-width: 50%;
 }
 
 #work #carousel .slide {
