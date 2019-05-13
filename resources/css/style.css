@@ -14,7 +14,9 @@ body {
 
 h1 {
   font-size: 1.5rem;
+  font-family: proxima-nova, sans-serif;
   font-weight: bold;
+  font-style: normal;
   margin-bottom: .5rem;
 }
 
@@ -28,8 +30,12 @@ p {
 }
 
 p#cv-link  {
-  font-weight: 700;
+  font-weight: bold;
   margin-top: 1.5rem;
+}
+
+a {
+  font-family: proxima-nova, sans-serif;
 }
 
 a:link, a:visited {
@@ -38,8 +44,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  text-decoration: none;
-  font-style: italic;
+  text-decoration: line-through;
   color: black;
 }
 
