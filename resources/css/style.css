@@ -14,7 +14,9 @@ body {
 
 h1 {
   font-size: 1.5rem;
+  font-family: proxima-nova, sans-serif;
   font-weight: 700;
+  font-style: normal;
   margin-bottom: .5rem;
 }
 
@@ -30,6 +32,10 @@ p {
 p#cv-link  {
   font-weight: 700;
   margin-top: 1.5rem;
+}
+
+a {
+  font-family: proxima-nova, sans-serif;
 }
 
 a:link, a:visited {
