@@ -1,8 +1,6 @@
-
 body {
   line-height: 1.1;
   background-color: #E5E5E5;
-  color: #2E2E2E;
   font-size: 16px;
   font-kerning: normal;
   text-align: center;
@@ -41,6 +39,7 @@ h2 {
 }
 
 p {
+  color: #2E2E2E;
   font-size: 4vw;
   font-family: adobe-caslon-pro, serif;
   font-weight: 600;
@@ -57,27 +56,6 @@ a {
   font-style: normal;
 }
 
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 1.5em;
-  }
-  header span {
-    font-size: .75em;
-  }
-  h2 {
-    font-size: 3em;
-  }
-  p {
-    font-size: 2em;
-  }
-  a {
-    font-size: 1.5em;
-  }
-  nav ul li {
-    padding: 0 0 3rem 0;
-  }
-}
-
 a:link, a:visited {
   text-decoration: none;
   color: #2E2E2E;
@@ -86,6 +64,27 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #4B4B4B;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
+  header span {
+    font-size: .75em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 3em;
+  }
+  a {
+    font-size: 1.5em;
+  }
+  nav ul li {
+    padding: 0 0 3rem 0;
+  }
 }
 
 nav {
