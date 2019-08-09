@@ -17,17 +17,22 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+header span {
+  color: #4B4B4B;
+}
+
 h1 {
-  font-size: 10vw;
-  font-family: adobe-caslon-pro, serif;
-  font-weight: 600;
-  font-style: italic;
-  letter-spacing: -0.015em;
+  font-size: 4vw;
+  font-family: cabazon, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.04em;
   margin-top: 5vw;
+  margin-bottom: 1.5vw;
 }
 
 h2 {
-  color: #3A3A3A;
+  color: #424242;
   font-size: 6vw;
   font-family: franklin-gothic-urw-cond, sans-serif;
   font-weight: 700;
@@ -55,16 +60,19 @@ a {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 15vw;
+    font-size: 2rem;
+  }
+  header span {
+    font-size: .75rem;
   }
   h2 {
-    font-size: 12vw;
+    font-size: 3rem;
   }
   p {
-    font-size: 8vw;
+    font-size: 2rem;
   }
   a {
-    font-size: 5vw;
+    font-size: 1rem;
   }
   nav ul li {
     padding: 0 0 3rem 0;
