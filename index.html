@@ -2,36 +2,182 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Jason Scholtz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Scholtz</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/wsp2wga.css">
-    <script src="https://kit.fontawesome.com/c287137dcb.js"></script>
-    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Jason Scholtz</h1>
-      <span>&#10039;</span>
-      <span>&#10039;</span>
-    </header>
-    <nav>
-      <ul>
-        <li> <a href="mailto:public@jasonscholtz.info"><i class="fas fa-envelope"></i></a> </li>
-        <li> <a href="./resources/pdf/jasonscholtz_cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a> </li>
-      </ul>
-    </nav>
-    <div class="main">
-      <h2>is an artist</h2>
-      <p>based in New York.</p>
-      <h2>his practice is</h2>
-      <p>a critical investigation<br>of aesthetic production<br>as a site of labor.</p>
-      <h2>using</h2>
-      <p>drawing, photography<br>and publications,</p>
-      <h2>his work explores</h2>
-      <p>the material realities of<br>visual communication</p>
-      <h2>and extends into</h2>
-      <p>a structural reconsideration<br>of the exhibtion as a form.</p>
+    <div class="page-container">
+
+      <!-- HEADER -->
+
+      <div class="main-header">
+        <h1 id="logo">Jason Scholtz</h1>
+
+      </div>
+
+      <!-- LIGHTBOX -->
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="slide" id="slide1">
+            <img src="./resources/images/On-View.jpg">
+            <div class="caption-container">
+              <p class="caption caption-title">On View: Rebecca at the Well, Chauncey Bradley Ives
+                (American, 1810–1894), 1871, Marble, Accession #2010.65, 50 &times; 17
+                &times; 17 inches; Bust of Rebecca, Chauncey Bradley Ives (American,
+                1810-1894), 1855, Marble, Accession #2010.70, 19 &frac14; &times; 13 &frac34; &times; 10
+                inches, High Museum of Art, Atlanta, Georgia, Stent Family Wing,
+                Level 3, Gallery 308</p>
+              <p class="caption">Digital pigment print</p>
+              <p class="caption">2019</p>
+              <p class="caption">17 &times; 22 inches</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./resources/images/Four-Leopards.jpg">
+            <div class="caption-container">
+              <p class="caption caption-title">Four Leopards (Camera Trap)</p>
+              <p class="caption">Pierre noir on paper</p>
+              <p class="caption">2019</p>
+              <p class="caption">16 &times; 12 inches</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./resources/images/Joey-Twice.png">
+            <div class="caption-container">
+              <p class="caption caption-title">Joey twice&thinsp;/&thinsp;Sam
+                Moore Photography&thinsp;/&thinsp;January 11, 2019</p>
+              <p class="caption">Digital pigment print</p>
+              <p class="caption">2019</p>
+              <p class="caption">Two parts, framed: 30 &times; 30 inches each;<br>paper:
+                17 &times; 22 inches, 16 &times; 20 inches;<br>images: 15 &times; 15 inches</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./resources/images/Fluff_1-33.jpg">
+            <div class="caption-container">
+              <p class="caption caption-title">1.33:1</p>
+              <p class="caption">Woodcut</p>
+              <p class="caption">2019</p>
+              <p class="caption">20 &times; 16 inches</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./resources/images/Lydian-Cursive.jpg">
+            <div class="caption-container">
+              <p class="caption caption-title">72pt Lydian Cursive</p>
+              <p class="caption">Gelatin silver print</p>
+              <p class="caption">2019</p>
+              <p class="caption">14 &times; 11 inches</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./resources/images/Horizon-Vachon.jpg">
+            <div class="caption-container">
+              <p class="caption caption-title" id="horizon-title">Supplement to
+                horizon of untitled negative by John Vachon (possibly related to:
+                Farmer, Irwinville Farms, Georgia), May 1938</p>
+              <p class="caption">Photopolymer gravure</p>
+              <p class="caption">2019</p>
+              <p class="caption">16 &times; 12 inches</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./resources/images/Shadow-Brick.jpg">
+            <div class="caption-container">
+              <p class="caption caption-title">Shadow (Brick)</p>
+              <p class="caption">Gelatin silver print, colored paper</p>
+              <p class="caption">2019</p>
+              <p class="caption">8 &frac12; &times; 11 inches</p>
+            </div>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#8604;</a>
+        <a class="next" onclick="plusSlides(1)">&#8605;</a>
+      </div>
+
+      <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+
+      <!-- MAIN -->
+
+      <div class="main-content">
+        <p  id="about"><span class="small-caps">was born</span> in
+          Chapel Hill, North Carolina in <span class="oldstyle-figures">1995</span>.
+          He received Bachelor of Fine Arts degrees in Sculpture and Printmaking
+          from Savannah College of Art and Design in Atlanta, Georgia. Using drawing,
+          video, printed matter, and publications his work explores the material
+          realities of visual communication, which extends into a structural
+          reconsideration of the exhibition as a form.</p> <p id="about">His most recent solo
+          exhibition was held at Whitespec in Atlanta, Georgia (<span class="oldstyle-figures">2019</span>).
+          Other recent exhibitions include a solo exhibition at The B-Complex,
+          Atlanta (<span class="oldstyle-figures">2019</span>), as well as group
+          exhibitions at Hathaway Gallery, Atlanta (<span class="oldstyle-figures">2018</span>);
+          Besharat Museum Gallery, Atlanta (<span class="oldstyle-figures">2018</span>);
+          and Gutstein Gallery, Savannah (<span class="oldstyle-figures">2017</span>).
+          Scholtz lives and works in New York.
+        </p>
+      </div>
+
+      <!-- FOOTER -->
+
+      <div class="main-footer">
+        <div class="main-navigation">
+          <ul>
+            <li> <a class="nav-link" href="mailto:public@jasonscholtz.info">contact</a> </li>
+            <li> <a class="nav-link" href="resources/pdf/jasonscholtz_cv.pdf">cv</a> </li>
+            <li> <a class="nav-link" href="#" onclick="openModal();currentSlide(1)">work</a> </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

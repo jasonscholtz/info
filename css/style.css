@@ -1,0 +1,284 @@
+
+/* PAGE */
+
+html {
+  height: 100%;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 640px){
+  html {
+    font-size: 19px;
+  }
+}
+
+body {
+  height: 100%;
+  background-color: rgb(204, 204, 204);
+  line-height: 1.3;
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+.page-container {
+  min-height: 100%;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+/* HEADER */
+
+.main-header {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: franklin-gothic-urw-cond, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 640px){
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* MAIN */
+
+.main-content {
+  height: 90%;
+}
+
+p#about {
+  max-width: 73ch;
+  margin-bottom: .375rem;
+}
+
+/* FOOTER */
+
+.main-footer {
+  position: fixed;
+  bottom: .5rem;
+  z-index: 2;
+}
+
+.main-navigation li {
+  display: inline;
+  padding-right: 4rem;
+  font-family: franklin-gothic-urw-comp, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+a.nav-link:link, a.nav-link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a.nav-link:active, a.nav-link:hover {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 640px){
+  .main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: rgb(204, 204, 204);
+  }
+
+  .main-content {
+    padding-top: 28rem;
+  }
+
+  p#about {
+    max-width: 33ch;
+  }
+
+  .main-footer {
+    top: 3rem;
+  }
+
+  .main-navigation li {
+    display: inline;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* LIGHTBOX */
+
+* {
+  box-sizing: border-box;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  text-align: center;
+}
+
+.slide img {
+  max-height: 90%;
+}
+
+/* CAPTION */
+
+.caption-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  bottom: .5rem;
+  right: 1rem;
+  padding: .25rem;
+}
+
+.caption {
+  font-size: .5rem;
+  max-width: 70ch;
+  text-align: right;
+}
+
+.caption-title {
+  font-style: italic;
+}
+
+#horizon-title {
+  max-width: 55ch;
+}
+
+/* BUTTONS */
+
+.close {
+  color: white;
+  position: absolute;
+  top: .5rem;
+  right: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  width: auto;
+  padding: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+@media only screen and (max-width: 640px){
+  .modal {
+    display: block;
+    width: 100%;
+    height: 50%;
+    top: 4.5rem;
+    background-color: rgb(204, 204, 204);
+  }
+
+  .modal-content {
+    height: 100%;
+  }
+
+  .slide img {
+    max-width: 90%;
+  }
+
+  .caption-container {
+    bottom: 10rem;
+    position: relative;
+    bottom: 0;
+  }
+
+  .caption {
+    font-size: .375rem;
+  }
+
+  .close {
+    font-size: 1rem;
+    right: .5rem;
+  }
+  .prev,
+  .next {
+    top: 10%;
+    font-size: 1rem;
+    padding: .5rem;
+  }
+}
+
+
+/* TYPOGRAPHY */
+
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
+    letter-spacing: 0.025em;
+}
+
+.oldstyle-figures {
+    -moz-font-feature-settings: "onum";
+    -ms-font-feature-settings: "onum";
+    -webkit-font-feature-settings: "onum";
+    font-feature-settings: "onum";
+}
