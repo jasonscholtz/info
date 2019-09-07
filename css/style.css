@@ -118,6 +118,13 @@ a.nav-link:active, a.nav-link:hover {
   }
 }
 
+@media only screen and (max-width: 400px) {
+
+  .main-content {
+    padding-top: 30rem; 
+  }
+}
+
 /* LIGHTBOX */
 
 * {
@@ -190,6 +197,7 @@ a.nav-link:active, a.nav-link:hover {
   right: 2rem;
   font-size: 2rem;
   font-weight: bold;
+  z-index: 2;
 }
 
 .close:hover,
@@ -239,29 +247,37 @@ a.nav-link:active, a.nav-link:hover {
     height: 100%;
   }
 
+  .slide {
+  }
+
   .slide img {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .caption-container {
     bottom: 10rem;
     position: relative;
     bottom: 0;
+    background-color: rgb(204, 204, 204);
+    width: 400px;
+    padding-top: .125rem;
   }
 
   .caption {
     font-size: .375rem;
+
   }
 
   .close {
     font-size: 1rem;
-    right: .5rem;
+    right: .25rem;
   }
+
   .prev,
   .next {
-    top: 10%;
+    top: 25%;
     font-size: 1rem;
-    padding: .5rem;
+    padding: .25rem;
   }
 }
 
