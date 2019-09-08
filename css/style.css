@@ -121,7 +121,7 @@ a.nav-link:active, a.nav-link:hover {
 @media only screen and (max-width: 400px) {
 
   .main-content {
-    padding-top: 30rem; 
+    padding-top: 30rem;
   }
 }
 
@@ -250,6 +250,10 @@ a.nav-link:active, a.nav-link:hover {
   .slide {
   }
 
+  .landscape {
+    padding-top: 3.5rem;
+  }
+
   .slide img {
     max-width: 80%;
   }
@@ -275,7 +279,7 @@ a.nav-link:active, a.nav-link:hover {
 
   .prev,
   .next {
-    top: 25%;
+    top: 40%;
     font-size: 1rem;
     padding: .25rem;
   }
