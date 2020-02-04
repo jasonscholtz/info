@@ -7,6 +7,12 @@ body {
   font-style: normal;
 }
 
+@media only screen and (max-width: 640px){
+  html {
+    font-size: 36pt;
+  }
+}
+
 a:link, a:visited {
   color: black;
   text-decoration: none;
