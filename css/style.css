@@ -2,9 +2,14 @@ body {
   padding: 1rem;
   background-color: rgb(204, 204, 204);
   line-height: 1.4;
+  font-family: adobe-caslon-pro, serif;
   font-size: 24pt;
   font-weight: 400;
   font-style: normal;
+}
+
+a {
+  font-family: franklin-gothic-urw-cond, sans-serif;
 }
 
 a:link, a:visited {
@@ -22,7 +27,7 @@ nav {
 }
 
 nav ul li {
-  line-height: 1.25;
+  line-height: 1;
 }
 
 body.work-container {
