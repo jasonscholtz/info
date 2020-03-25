@@ -1,16 +1,42 @@
+/* UNIVERSAL */
+
+/* div {
+  border: 1px solid black;
+} */
+
+html {
+  font-size: 24px
+}
+
 body {
-  padding: 1rem;
   background-color: rgb(204, 204, 204);
   line-height: 1.4;
   font-family: adobe-caslon-pro, serif;
-  font-size: 36pt;
   font-weight: 400;
   font-style: normal;
 }
 
-a {
-  font-family: franklin-gothic-urw-cond, sans-serif;
+.page-container {
+  margin: 1rem 2rem 1rem 2rem;
 }
+
+/* NAV */
+
+nav {
+  font-size: 5rem;
+  line-height: 1;
+  max-width: 80%;
+}
+
+.nav-block {
+  display: flex;
+}
+
+nav li {
+  padding-right: 2.5rem;
+}
+
+/* LINKS */
 
 a:link, a:visited {
   color: black;
@@ -18,32 +44,75 @@ a:link, a:visited {
 }
 
 a:active, a:hover {
-  color: white;
-  border-bottom: 2px solid white;
+  color: black;
+  font-style: italic;
 }
 
-nav {
-  padding: 1rem 0 1rem 0;
+a#home-button:active, a#home-button:hover {
+  font-style: normal;
+  text-decoration: underline;
 }
 
-nav ul li {
-  line-height: 1;
-}
-
-body.work-container {
-  background-color: rgb(233, 233, 233);
-}
-
-span.back-button a:link, span.back-button a:visited {
+#back-button {
   position: fixed;
+  font-family: franklin-gothic-urw-cond, sans-serif;
+}
+
+a#back-button:link, a#back-button:visited {
   color: white;
   text-decoration: none;
 }
 
-span.back-button a:active, span.back-button a:hover {
-  position: fixed;
-  color: black;
-  border-bottom: 2px solid black;
+a#back-button:active, a#back-button:hover {
+  color: white;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+div#cv-link {
+  font-size: .75rem;
+  margin-top: 1rem;
+}
+
+/* BIO */
+
+div.bio-container {
+  max-width: 80%;
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+div.bio-header-container {
+  display: flex;
+}
+
+div.header-spacer, div.date-container {
+  width: 20%;
+}
+
+div.bio-header {
+  width: 80%;
+  padding: 1rem 0 .5rem 0;
+}
+
+div.bio-block {
+  display: flex;
+  margin: .125rem 0 .25rem 0;
+}
+
+div.info-container {
+  width: 80%;
+}
+
+p.info-title {
+  font-style: italic;
+}
+
+/* WORK */
+
+#work-container {
+  background-color: rgb(233, 233, 233);
 }
 
 div.image-container {
@@ -56,20 +125,62 @@ img {
   max-height: 1000px;
 }
 
-p {
-  max-width: 50ch;
+/* TYPOGRAPHY */
+
+body {
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-@media only screen and (max-width: 640px){
-  body {
-    font-size: 30pt;
-    line-height: 1.25;
-  }
-  nav {
-    padding: 2rem 0 2rem 0;
-  }
-  img {
-    max-width: 100%;
-    max-height: 350px;
-  }
+h1 {
+  font-family: franklin-gothic-urw-cond, sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: franklin-gothic-urw-cond, sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: franklin-gothic-urw-cond, sans-serif;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+p#bio {
+  max-width: 67ch;
+}
+
+p.subtext {
+  line-height: 1;
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
+    letter-spacing: -.03em;
+}
+
+.oldstyle-figures {
+    -moz-font-feature-settings: "onum";
+    -ms-font-feature-settings: "onum";
+    -webkit-font-feature-settings: "onum";
+    font-feature-settings: "onum";
+}
+
+.lining-figures {
+    -moz-font-feature-settings: "lnum";
+    -ms-font-feature-settings: "lnum";
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
 }
