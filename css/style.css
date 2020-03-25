@@ -106,7 +106,7 @@ div.info-container {
   width: 80%;
 }
 
-p.info-title {
+span.info-title {
   font-style: italic;
 }
 
@@ -184,4 +184,92 @@ p.subtext {
     -ms-font-feature-settings: "lnum";
     -webkit-font-feature-settings: "lnum";
     font-feature-settings: "lnum";
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 640px){
+
+  /* UNIVERSAL */
+
+  html {
+    font-size: 20px;
+  }
+
+  body {
+    line-height: 1.25;
+  }
+
+  .page-container {
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* NAV */
+
+  nav {
+    font-size: 3rem;
+    line-height: 1.4;
+    max-width: 80%;
+  }
+
+  .nav-block {
+    display: flex;
+    flex-direction:  column;
+  }
+
+  nav li {
+    padding-right: 2.5rem;
+  }
+
+  /* BIOGRAPHY */
+
+  div.bio-container {
+    max-width: 100%;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.bio-header-container {
+    display: flex;
+  }
+
+  div.header-spacer, div.date-container {
+    width: 30%;
+    padding: .25rem 0 .25rem 0;
+  }
+
+  div.bio-header {
+    width: 70%;
+    padding: 1rem 0 .5rem 0;
+  }
+
+  div.bio-block {
+    display: flex;
+    margin: .125rem 0 .25rem 0;
+  }
+
+  div.info-container {
+    width: 70%;
+  }
+
+  .info-text p {
+    padding: .25rem 0 .25rem 0;
+  }
+
+  /* WORK */
+
+  img {
+    max-width: 100%;
+    max-height: 350px;
+  }
 }
