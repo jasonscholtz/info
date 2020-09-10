@@ -155,6 +155,7 @@ h3 {
 }
 
 p#bio {
+  padding-top: 1rem;
   max-width: 67ch;
 }
 
